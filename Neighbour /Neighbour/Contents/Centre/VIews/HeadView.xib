@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FLr-jG-TWW" customClass="HeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4nj-eE-nGI">
+                    <rect key="frame" x="163" y="30" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.26274509800000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="41U-t7-xQl"/>
+                        <constraint firstAttribute="width" constant="50" id="uUp-je-Tv9"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyi-hH-GaT" customClass="HeadViewButton">
+                    <rect key="frame" x="0.0" y="88" width="375" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="I3c-AC-Xbk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="吃西瓜的二小姐" image="nan.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="康乐新村" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-Zx-mow">
+                    <rect key="frame" x="0.0" y="122" width="375" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="QtY-Jn-IT2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6W-Ss-mmz">
+                    <rect key="frame" x="187" y="148" width="2" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="K8g-9e-fIJ"/>
+                        <constraint firstAttribute="width" constant="2" id="QT6-cH-a4W"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nB-io-6pd" customClass="HeadViewButton">
+                    <rect key="frame" x="209" y="148" width="150" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="7xD-bO-ycF"/>
+                        <constraint firstAttribute="height" constant="24" id="B8G-hU-vBU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="商户" image="shang.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-Dn-08w" customClass="HeadViewButton">
+                    <rect key="frame" x="17" y="148" width="150" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Pna-JO-F4B"/>
+                        <constraint firstAttribute="width" constant="150" id="byt-b1-VJv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="生活家" image="jia.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G6W-Ss-mmz" firstAttribute="leading" secondItem="t7A-Dn-08w" secondAttribute="trailing" constant="20" id="223-Tc-t6X"/>
+                <constraint firstItem="4nj-eE-nGI" firstAttribute="top" secondItem="FLr-jG-TWW" secondAttribute="top" constant="30" id="4sC-qo-UOw"/>
+                <constraint firstAttribute="trailing" secondItem="cZ0-Zx-mow" secondAttribute="trailing" id="6NS-Kq-RgQ"/>
+                <constraint firstItem="4nB-io-6pd" firstAttribute="leading" secondItem="G6W-Ss-mmz" secondAttribute="trailing" constant="20" id="6fZ-NO-f7W"/>
+                <constraint firstItem="4nB-io-6pd" firstAttribute="top" secondItem="cZ0-Zx-mow" secondAttribute="bottom" constant="10" id="IjZ-sm-0xm"/>
+                <constraint firstAttribute="centerX" secondItem="G6W-Ss-mmz" secondAttribute="centerX" id="Nxk-9n-2ZR"/>
+                <constraint firstItem="cZ0-Zx-mow" firstAttribute="leading" secondItem="FLr-jG-TWW" secondAttribute="leading" id="WXF-fK-PNt"/>
+                <constraint firstItem="t7A-Dn-08w" firstAttribute="top" secondItem="cZ0-Zx-mow" secondAttribute="bottom" constant="10" id="d4n-gj-Hrc"/>
+                <constraint firstItem="G6W-Ss-mmz" firstAttribute="top" secondItem="cZ0-Zx-mow" secondAttribute="bottom" constant="10" id="ge8-ow-axh"/>
+                <constraint firstAttribute="centerX" secondItem="4nj-eE-nGI" secondAttribute="centerX" id="gns-aM-CSf"/>
+                <constraint firstItem="Vyi-hH-GaT" firstAttribute="leading" secondItem="FLr-jG-TWW" secondAttribute="leading" id="hjB-mY-qfs"/>
+                <constraint firstItem="Vyi-hH-GaT" firstAttribute="top" secondItem="4nj-eE-nGI" secondAttribute="bottom" constant="8" id="mCA-Wp-Cbd"/>
+                <constraint firstAttribute="trailing" secondItem="Vyi-hH-GaT" secondAttribute="trailing" id="taw-rv-xA0"/>
+                <constraint firstItem="cZ0-Zx-mow" firstAttribute="top" secondItem="Vyi-hH-GaT" secondAttribute="bottom" constant="10" id="z1H-kh-UYZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="address" destination="cZ0-Zx-mow" id="vii-zb-BWh"/>
+                <outlet property="icon" destination="4nj-eE-nGI" id="De8-WG-KNL"/>
+                <outlet property="leftBtn" destination="t7A-Dn-08w" id="tOq-rz-fG0"/>
+                <outlet property="name" destination="Vyi-hH-GaT" id="dRq-xT-B8l"/>
+                <outlet property="rightBtn" destination="4nB-io-6pd" id="QFd-Dp-IMO"/>
+            </connections>
+            <point key="canvasLocation" x="473.5" y="419"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jia.png" width="20" height="20"/>
+        <image name="nan.png" width="24" height="24"/>
+        <image name="shang.png" width="20" height="20"/>
+    </resources>
+</document>

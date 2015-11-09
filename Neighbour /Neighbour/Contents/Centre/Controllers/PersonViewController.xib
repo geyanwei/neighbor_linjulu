@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController">
+            <connections>
+                <outlet property="icon" destination="gqP-RP-T2C" id="9Fg-He-g9B"/>
+                <outlet property="myTable" destination="Qeq-w1-MF8" id="guJ-s4-SYt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZD-fE-Dt3">
+                    <rect key="frame" x="0.0" y="64" width="375" height="127"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-RP-T2C">
+                            <rect key="frame" x="163" y="15" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.26274509800000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="QKf-81-kZs"/>
+                                <constraint firstAttribute="width" constant="50" id="TTh-M2-phC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编辑头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-O0-b1c">
+                            <rect key="frame" x="0.0" y="70" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hXv-bd-LzF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eP9-O0-b1c" secondAttribute="trailing" id="MgM-wP-gYA"/>
+                        <constraint firstAttribute="height" constant="127" id="Q7G-KO-hbe"/>
+                        <constraint firstItem="gqP-RP-T2C" firstAttribute="top" secondItem="lZD-fE-Dt3" secondAttribute="top" constant="15" id="cUo-iQ-gGS"/>
+                        <constraint firstItem="eP9-O0-b1c" firstAttribute="top" secondItem="gqP-RP-T2C" secondAttribute="bottom" constant="5" id="l0a-ch-WVU"/>
+                        <constraint firstAttribute="centerX" secondItem="gqP-RP-T2C" secondAttribute="centerX" id="ljI-xK-xXa"/>
+                        <constraint firstItem="eP9-O0-b1c" firstAttribute="leading" secondItem="lZD-fE-Dt3" secondAttribute="leading" id="rqa-Ms-xm2"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Qeq-w1-MF8">
+                    <rect key="frame" x="0.0" y="191" width="375" height="476"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qeq-w1-MF8" secondAttribute="trailing" id="2yo-l1-hiu"/>
+                <constraint firstItem="Qeq-w1-MF8" firstAttribute="top" secondItem="lZD-fE-Dt3" secondAttribute="bottom" id="61a-F6-nPb"/>
+                <constraint firstAttribute="trailing" secondItem="lZD-fE-Dt3" secondAttribute="trailing" id="Ok1-lb-GgQ"/>
+                <constraint firstItem="lZD-fE-Dt3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="SgN-8V-eF4"/>
+                <constraint firstItem="Qeq-w1-MF8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bKa-sX-HJT"/>
+                <constraint firstAttribute="bottom" secondItem="Qeq-w1-MF8" secondAttribute="bottom" id="nsB-Dr-mBf"/>
+                <constraint firstItem="lZD-fE-Dt3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nxu-Rs-aUJ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="565.5" y="494.5"/>
+        </view>
+    </objects>
+</document>
